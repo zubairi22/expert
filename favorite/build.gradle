@@ -23,6 +23,7 @@ android {
     buildTypes {
         release {
             minifyEnabled false
+            proguardFiles 'proguard-rules.pro'
         }
     }
 
@@ -36,9 +37,6 @@ android {
 
     buildFeatures {
         viewBinding = true
-    }
-    lintOptions {
-        abortOnError false
     }
 }
 
